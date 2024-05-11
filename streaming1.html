@@ -1,0 +1,130 @@
+
+
+<html>
+
+<head>
+  <script type="module" src="/@vite/client"></script>
+
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          background-color: #14181f;
+        }
+
+        .popup {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          padding: 20px;
+          background-color: #000000;
+          border-radius: 15px;
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          z-index: 9999;
+          /* Responsiveness: Set max-width and adjust padding based on screen size */
+          max-width: 80%; /* Adjust as needed */
+          padding: calc(20px + 2vw); /* Adjust padding based on viewport width */
+        }
+
+        .popup h2 {
+          text-align: center;
+          color: #ffffff;
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+
+        .popup h5 {
+          color: #ffffff;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        .popup iframe {
+          width: 100%;
+          height: 300px; /* Adjust height as needed */
+          border: none;
+          border-radius: 10px;
+        }
+
+        .popup button {
+          width: 100%;
+          padding: 10px;
+          background-color: #0080ff;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin-bottom: 10px;
+        }
+
+        .popup button:last-child {
+          margin-bottom: 20px;
+        }
+
+        .button-container {
+          display: flex;
+          justify-content: space-between; /* Space buttons evenly */
+        }
+
+        #open-popup {
+          padding: 10px 20px;
+          background-color: #0080ff;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin: 20px auto; /* Center button horizontally */
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="popup">
+
+    <h2>Pilih Server</h2>
+
+    <iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen; geolocation; web-share; speaker-selection; screen-wake-lock; idle-detection" allowfullscreen="" frameborder="0" height="auto" id="videoFrame" loading="lazy" scrolling="no" src="https://anym3u8player.com/tv/p.php?url=https://cdn.videy.co/7HMtZr2A.mp4" width="auto"></iframe>  
+<button onclick="changeServer('https://anym3u8player.com/tv/video-player.php?url=https%3A%2F%2F38ca3c9c.wurl.com%2Fmaster%2Ff36d25e7e52f1ba8d7e56eb859c636563214f541%2FU2Ftc3VuZy1nYl9GSUZBUGx1c19ITFM%2Fplaylist.m3u8')">Server 1</button>
+<button onclick="changeServer('https://anym3u8player.com/tv/video-player.php?url=https%3A%2F%2F38ca3c9c.wurl.com%2Fmaster%2Ff36d25e7e52f1ba8d7e56eb859c636563214f541%2FU2Ftc3VuZy1nYl9GSUZBUGx1c19ITFM%2Fplaylist.m3u8')">Server 2</button>
+<button onclick="changeServer('https://anym3u8player.com/tv/video-player.php?url=https%3A%2F%2F38ca3c9c.wurl.com%2Fmaster%2Ff36d25e7e52f1ba8d7e56eb859c636563214f541%2FU2Ftc3VuZy1nYl9GSUZBUGx1c19ITFM%2Fplaylist.m3u8')">Server 3</button>
+<button onclick="changeServer('https://anym3u8player.com/tv/video-player.php?url=https%3A%2F%2F38ca3c9c.wurl.com%2Fmaster%2Ff36d25e7e52f1ba8d7e56eb859c636563214f541%2FU2Ftc3VuZy1nYl9GSUZBUGx1c19ITFM%2Fplaylist.m3u8')">Server 4</button>
+
+<!--    <button onclick="changeServer('https://partners-mplay.visionplus.id/embed/live/2?key=2ead837b642979843d8e7de3d9ab926c')">Rcti</button>
+-->
+    <a href="https://wa.me/628819670294"><img src="https://www.pngplay.com/wp-content/uploads/1/Contact-Us-PNG-Background-Image.png" alt="contact-me" style="display: block;margin-left: auto;margin-right: auto;width: 40%;"></a>
+</div>
+
+
+<script>
+
+function changeServer(serverURL) {
+
+    document.getElementById('videoFrame').src = serverURL;
+
+}
+
+    const videoFrame = document.getElementById('videoFrame');
+    const openPopupBtn = document.getElementById('open-popup');
+    const videoPopup = document.getElementById('video-popup');
+
+    openPopupBtn.addEventListener('click', () => {
+      videoPopup.classList.add('active');
+    });
+
+    function changeServer(serverURL) {
+      videoFrame.src = serverURL;
+    }
+
+    // Close popup functionality (optional):
+
+    
+</script>
+
+</body>
+
+</html>
